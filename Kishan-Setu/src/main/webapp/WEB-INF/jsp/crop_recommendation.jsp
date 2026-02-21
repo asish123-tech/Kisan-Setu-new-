@@ -226,7 +226,7 @@
             <a href="#" class="nav-link">Contact</a>
         </div>
 
-        <a href="dashboard.jsp" class="dashboard-btn">
+        <a href="dashboard" class="dashboard-btn">
             <i class="fas fa-arrow-left"></i> Dashboard
         </a>
     </nav>

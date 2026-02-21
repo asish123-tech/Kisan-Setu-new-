@@ -225,8 +225,8 @@
         <div class="navbar">
             <a href="#" class="nav-item active"><i class="fas fa-home"></i> Home</a>
             <a href="#" class="nav-item"><i class="fas fa-tint"></i> Water Monitoring</a>
-            <a href="#" class="nav-item"><i class="fas fa-seedling"></i> Crop Guide</a>
-            <a href="#" class="nav-item"><i class="fas fa-kit-medical"></i> Medicine & Treatment</a>
+            <a href="crop-recommendation" class="nav-item"><i class="fas fa-seedling"></i> Crop Guide</a>
+            <a href="medicine-choice" class="nav-item"><i class="fas fa-kit-medical"></i> Pesticide & Treatment</a>
             <a href="#" class="nav-item"><i class="fas fa-chart-line"></i> Market Prices</a>
         </div>
 
@@ -247,11 +247,11 @@
                 <i class="fas fa-chevron-right" style="color:#ccc;"></i>
             </div>
 
-            <div class="feature-card">
+            <div class="feature-card" onclick="window.location.href='/medicine-choice'">
                 <div class="card-content">
                     <div class="icon-box icon-shield"><i class="fas fa-shield-virus"></i></div>
                     <div class="text-info">
-                        <h3>Medicine Recommendation</h3>
+                        <h3>Pesticide Recommendation</h3>
                         <p>Pest & disease treatment solutions</p>
                     </div>
                 </div>
@@ -269,7 +269,7 @@
                 <i class="fas fa-chevron-right" style="color:#ccc;"></i>
             </div>
 
-            <div class="feature-card">
+            <div class="feature-card" onclick="window.location.href='/market-choice'">
                 <div class="card-content">
                     <div class="icon-box icon-rupee"><i class="fas fa-indian-rupee-sign"></i></div>
                     <div class="text-info">
