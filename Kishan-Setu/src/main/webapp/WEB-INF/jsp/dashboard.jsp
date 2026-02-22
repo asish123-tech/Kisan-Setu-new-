@@ -232,23 +232,23 @@
     <div class="top-header">
         <div class="logo"><i class="fas fa-leaf"></i> KisanSetu</div>
         <div class="header-actions">
-            <button class="lang-toggle" onclick="toggleLanguage()">EN / हि</button>
-            <a href="/login" class="logout-btn"><i class="fas fa-sign-out-alt"></i> <span data-i18n="logout">Logout</span></a>
+            <button class="lang-toggle">EN / हि</button>
+            <a href="/login" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </div>
     </div>
 
     <div class="container">
         <div class="navbar">
-            <a href="#" class="nav-item active"><i class="fas fa-home"></i> <span data-i18n="navHome">Home</span></a>
-            <a href="#" class="nav-item"><i class="fas fa-tint"></i> <span data-i18n="navWater">Water Monitoring</span></a>
-            <a href="crop-recommendation" class="nav-item"><i class="fas fa-seedling"></i> <span data-i18n="navCrop">Crop Guide</span></a>
-            <a href="medicine-choice" class="nav-item"><i class="fas fa-kit-medical"></i> <span data-i18n="navPest">Pesticide & Treatment</span></a>
-            <a href="/market-choice" class="nav-item"><i class="fas fa-chart-line"></i> <span data-i18n="navMarket">Market Prices</span></a>
+            <a href="#" class="nav-item active"><i class="fas fa-home"></i> Home</a>
+            <a href="#" class="nav-item"><i class="fas fa-tint"></i> Water Monitoring</a>
+            <a href="crop-recommendation" class="nav-item"><i class="fas fa-seedling"></i> Crop Guide</a>
+            <a href="medicine-choice" class="nav-item"><i class="fas fa-kit-medical"></i> Pesticide & Treatment</a>
+            <a href="/market-choice" class="nav-item"><i class="fas fa-chart-line"></i> Market Prices</a>
         </div>
 
         <div class="welcome-hero">
-            <h1 data-i18n="welcomeTitle">Welcome, Farmer!</h1>
-            <p data-i18n="welcomeSub">Your smart farming assistant is ready to help you grow more.</p>
+            <h1>Welcome, Farmer!</h1>
+            <p>Your smart farming assistant is ready to help you grow more.</p>
         </div>
 
         <div class="feature-grid">
@@ -256,8 +256,8 @@
                 <div class="card-content">
                     <div class="icon-box icon-wheat"><i class="fas fa-wheat-awn"></i></div>
                     <div class="text-info">
-                        <h3 data-i18n="featCropTitle">Crop Recommendation</h3>
-                        <p data-i18n="featCropSub">Get smart suggestions based on soil & season</p>
+                        <h3>Crop Recommendation</h3>
+                        <p>Get smart suggestions based on soil & season</p>
                     </div>
                 </div>
                 <i class="fas fa-chevron-right" style="color:#ccc;"></i>
@@ -267,19 +267,19 @@
                 <div class="card-content">
                     <div class="icon-box icon-shield"><i class="fas fa-shield-virus"></i></div>
                     <div class="text-info">
-                        <h3 data-i18n="featPestTitle">Pesticide Recommendation</h3>
-                        <p data-i18n="featPestSub">Pest & disease treatment solutions</p>
+                        <h3>Pesticide Recommendation</h3>
+                        <p>Pest & disease treatment solutions</p>
                     </div>
                 </div>
                 <i class="fas fa-chevron-right" style="color:#ccc;"></i>
             </div>
 
-            <div class="feature-card" onclick="window.location.href='/water-level'">
+            <div class="feature-card"onclick="window.location.href='/water-level'">
                 <div class="card-content">
                     <div class="icon-box icon-water"><i class="fas fa-droplet"></i></div>
                     <div class="text-info">
-                        <h3 data-i18n="featWaterTitle">Water Level</h3>
-                        <p data-i18n="featWaterSub">Check moisture & plan irrigation</p>
+                        <h3>Water Level</h3>
+                        <p>Check moisture & plan irrigation</p>
                     </div>
                 </div>
                 <i class="fas fa-chevron-right" style="color:#ccc;"></i>
@@ -289,8 +289,8 @@
                 <div class="card-content">
                     <div class="icon-box icon-rupee"><i class="fas fa-indian-rupee-sign"></i></div>
                     <div class="text-info">
-                        <h3 data-i18n="featMarketTitle">Market Prices</h3>
-                        <p data-i18n="featMarketSub">Live crop prices at nearby Mandis</p>
+                        <h3>Market Prices</h3>
+                        <p>Live crop prices at nearby Mandis</p>
                     </div>
                 </div>
                 <i class="fas fa-chevron-right" style="color:#ccc;"></i>
@@ -299,7 +299,7 @@
 
         <div class="schemes-wrapper">
             <div class="schemes-header-row">
-                <h2 class="section-title"><i class="fas fa-landmark"></i> <span data-i18n="schemeSection">Government Schemes</span></h2>
+                <h2 class="section-title"><i class="fas fa-landmark"></i> Government Schemes</h2>
                 <select class="state-filter-select" id="stateFilter" onchange="filterSchemes()">
                     <option value="all">All India Schemes</option>
                     <option value="MH">Maharashtra</option>
@@ -309,7 +309,7 @@
                 </select>
             </div>
             
-            <div class="category-label"><i class="fas fa-gift" style="color: #6b7280;"></i> <span data-i18n="catFree">Free Schemes</span></div>
+            <div class="category-label"><i class="fas fa-gift" style="color: #6b7280;"></i> Free Schemes</div>
             <div class="schemes-grid">
 				<a href="https://soilhealth.dac.gov.in/" target="_blank" class="scheme-link">
                 <div class="scheme-card" data-state="all">
@@ -336,7 +336,7 @@
                 </div>
             </div>
 
-            <div class="category-label"><i class="fas fa-hand-holding-dollar" style="color: #166534;"></i> <span data-i18n="catBenefit">Direct Benefit</span></div>
+            <div class="category-label"><i class="fas fa-hand-holding-dollar" style="color: #166534;"></i> Direct Benefit</div>
             <div class="schemes-grid">
                 <div class="scheme-card" data-state="all">
                     <div class="scheme-header">
@@ -354,7 +354,7 @@
                 </div>
             </div>
 
-            <div class="category-label"><i class="fas fa-tags" style="color: #92400e;"></i> <span data-i18n="catSubsidized">Subsidized</span></div>
+            <div class="category-label"><i class="fas fa-tags" style="color: #92400e;"></i> Subsidized</div>
             <div class="schemes-grid">
                 <div class="scheme-card" data-state="all">
                     <div class="scheme-header">
@@ -368,69 +368,6 @@
     </div>
 
     <script>
-        // --- TRANSLATION DATA ---
-        const translations = {
-            en: {
-                logout: "Logout",
-                navHome: "Home",
-                navWater: "Water Monitoring",
-                navCrop: "Crop Guide",
-                navPest: "Pesticide & Treatment",
-                navMarket: "Market Prices",
-                welcomeTitle: "Welcome, Farmer!",
-                welcomeSub: "Your smart farming assistant is ready to help you grow more.",
-                featCropTitle: "Crop Recommendation",
-                featCropSub: "Get smart suggestions based on soil & season",
-                featPestTitle: "Pesticide Recommendation",
-                featPestSub: "Pest & disease treatment solutions",
-                featWaterTitle: "Water Level",
-                featWaterSub: "Check moisture & plan irrigation",
-                featMarketTitle: "Market Prices",
-                featMarketSub: "Live crop prices at nearby Mandis",
-                schemeSection: "Government Schemes",
-                catFree: "Free Schemes",
-                catBenefit: "Direct Benefit",
-                catSubsidized: "Subsidized"
-            },
-            hi: {
-                logout: "लॉगआउट",
-                navHome: "होम",
-                navWater: "जल प्रबंधन",
-                navCrop: "फसल गाइड",
-                navPest: "कीटनाशक और उपचार",
-                navMarket: "बाजार भाव",
-                welcomeTitle: "नमस्ते, किसान भाई!",
-                welcomeSub: "आपका स्मार्ट खेती सहायक आपको अधिक पैदावार में मदद करने के लिए तैयार है।",
-                featCropTitle: "फसल सुझाव",
-                featCropSub: "मिट्टी और मौसम के आधार पर स्मार्ट सुझाव प्राप्त करें",
-                featPestTitle: "कीटनाशक सुझाव",
-                featPestSub: "कीट और रोग उपचार समाधान",
-                featWaterTitle: "जल स्तर",
-                featWaterSub: "नमी की जाँच करें और सिंचाई की योजना बनाएं",
-                featMarketTitle: "बाजार भाव",
-                featMarketSub: "निकटतम मंडियों में फसलों के लाइव भाव",
-                schemeSection: "सरकारी योजनाएं",
-                catFree: "मुफ्त योजनाएं",
-                catBenefit: "प्रत्यक्ष लाभ",
-                catSubsidized: "रियायती योजनाएं"
-            }
-        };
-
-        function toggleLanguage() {
-            const currentLang = localStorage.getItem('kisanLang') === 'hi' ? 'en' : 'hi';
-            localStorage.setItem('kisanLang', currentLang);
-            applyLanguage(currentLang);
-        }
-
-        function applyLanguage(lang) {
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang][key]) {
-                    el.innerText = translations[lang][key];
-                }
-            });
-        }
-
         function filterSchemes() {
             const selectedState = document.getElementById('stateFilter').value;
             const cards = document.querySelectorAll('.scheme-card');
@@ -438,9 +375,11 @@
             cards.forEach(card => {
                 const cardState = card.getAttribute('data-state');
                 if (selectedState === 'all') {
+                    // Show only general "all India" schemes when 'All' is selected
                     if (cardState === 'all') card.classList.remove('hidden');
                     else card.classList.add('hidden');
                 } else {
+                    // Show 'all India' schemes AND the specific selected state schemes
                     if (cardState === 'all' || cardState === selectedState) {
                         card.classList.remove('hidden');
                     } else {
@@ -449,15 +388,8 @@
                 }
             });
         }
-
-        window.onload = function() {
-            // Load language preference
-            const savedLang = localStorage.getItem('kisanLang') || 'en';
-            applyLanguage(savedLang);
-            
-            // Run filter logic
-            filterSchemes();
-        };
+        // Run once on load to show only "All India" by default
+        window.onload = filterSchemes;
     </script>
 
     <footer>
