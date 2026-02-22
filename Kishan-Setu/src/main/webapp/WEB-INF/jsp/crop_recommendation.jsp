@@ -40,7 +40,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-sizing: border-box; /* Ensures padding doesn't break width */
+            box-sizing: border-box; 
         }
 
         .logo {
@@ -162,28 +162,23 @@
             
             if (!city) { alert("Please enter a city name."); return; }
 
-            // 1. Show Loading
             btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Finding...';
             btn.disabled = true;
 
             const weatherBox = document.querySelector(".weather-box");
             weatherBox.style.display = "none";
 
-            // 2. WeatherAPI URL
             const apiKey = "d60fd6709eb941f8b05164847261302"; 
             const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
             try {
-                // Try Real Fetch
                 const response = await fetch(url);
                 if (!response.ok) throw new Error("API Error"); 
                 const data = await response.json();
                 
-                // Success: Real Data
                 updateUI(data.current.temp_c, data.current.humidity, true, data.location.name);
 
             } catch (error) {
-                // Fail-Safe: Simulation Mode (No Errors Shown!)
                 console.warn("API blocked. Switching to backup.");
                 const simTemp = (Math.random() * (32 - 25) + 25).toFixed(1); 
                 const simHumid = Math.floor(Math.random() * (70 - 50) + 50);
@@ -303,15 +298,12 @@
                 
                 <select name="phLevel" id="phLevel" required>
                     <option value="" disabled selected>Select pH Value...</option>
-                    
                     <option value="4.0">4.0 (Very Acidic)</option>
                     <option value="5.0">5.0 (Acidic)</option>
                     <option value="5.5">5.5</option>
-                    
                     <option value="6.0">6.0 (Slightly Acidic)</option>
                     <option value="6.5">6.5 (Ideal)</option>
                     <option value="7.0">7.0 (Neutral)</option>
-                    
                     <option value="7.5">7.5 (Slightly Alkaline)</option>
                     <option value="8.0">8.0 (Alkaline)</option>
                     <option value="9.0">9.0 (Very Alkaline)</option>
@@ -320,6 +312,18 @@
                 <p style="font-size: 12px; color: #6b7280; margin-top: 5px;">
                     * Most crops prefer a pH between 6.0 and 7.0.
                 </p>
+            </div>
+
+            <div class="input-group">
+                <label for="season">
+                    <i class="fas fa-cloud-sun-rain" style="color: #fb923c; margin-right: 5px;"></i> Sowing Season
+                </label>
+                <select name="season" id="season" required>
+                    <option value="" disabled selected>Select Sowing Season...</option>
+                    <option value="Kharif">Kharif (Monsoon: June - Oct)</option>
+                    <option value="Rabi">Rabi (Winter: Nov - April)</option>
+                    <option value="Zaid">Zaid (Summer: March - June)</option>
+                </select>
             </div>
 
             <button type="submit" class="submit-btn">
