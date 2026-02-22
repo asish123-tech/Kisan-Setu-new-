@@ -119,7 +119,7 @@
         </div>
     </div>
 
-    <a href="crop_recommendation.jsp" class="btn-home">Check Another Crop</a>
+    <a href="crop_recommendation" class="btn-home">Check Another Crop</a>
 
 </div>
 
