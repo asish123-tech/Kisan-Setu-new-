@@ -1,4 +1,4 @@
-package sp.main.service;
+package in.sp.main.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
