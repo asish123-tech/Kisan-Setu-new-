@@ -269,7 +269,7 @@
                 <i class="fas fa-chevron-right" style="color:#ccc;"></i>
             </div>
 
-            <div class="feature-card">
+            <div class="feature-card"onclick="window.location.href='/water-level'">
                 <div class="card-content">
                     <div class="icon-box icon-water"><i class="fas fa-droplet"></i></div>
                     <div class="text-info">
